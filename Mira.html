@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mira  AI - Premium Chat Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
+</head>
+<body>
+    <div class="chat-container" aria-label="Chat Interface">
+        <header class="chat-header" role="banner">
+            <img src="aigirl.png" alt="Liraya Logo" class="chat-logo">
+            <h1 class="chat-title">Mira</h1>
+            <p class="chat-subtitle">Your Smart & Charming AI Assistant</p>
+        </header>
+        <main class="chat-area" id="chat-area" aria-live="polite"></main>
+        <footer class="input-area" role="contentinfo">
+            <input type="text" id="userInput" placeholder="Type a message..." class="chat-input" aria-label="Type a message" autocomplete="off">
+            <button id="sendButton" class="send-button" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+            <div id="chat-interface">
+                  <button id="voiceButton" onclick="startListening()" aria-label="Start Voice Recognition"><i class="fas fa-microphone"></i></button>
+                  <button id="stopVoiceButton" onclick="stopListening()" aria-label="Stop Voice Recognition"><i class="fas fa-microphone-slash"></i></button>
+              </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
