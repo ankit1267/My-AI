@@ -1,7 +1,7 @@
 let recognition;
 let isListening = false;
 
-// Initialize Speech Recognition
+// Initialize Speech Recognition sdfs
 function initRecognition() {
     recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
     recognition.lang = 'en-US';
